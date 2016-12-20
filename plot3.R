@@ -11,7 +11,7 @@ power.data = subset(power.data, as.Date(date.time)
                         as.Date(date.time) <= 
                         as.Date("2007-02-02"))
 
-png("plot2=3.png", height=480, width=480)
+png("plot3=3.png", height=480, width=480)
 plot(power.data$date.time, power.data$Sub_metering_1, xlab = "", 
      ylab = "Energy sub metering", type = "l")
 lines(power.data$date.time, power.data$Sub_metering_2, col='red')
